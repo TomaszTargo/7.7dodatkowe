@@ -55,6 +55,7 @@ header
     
     > li
       margin: 0
+      margin-bottom: 80px
       padding: 0
       display: inline-block /*--lista ul jest w jednej lini menu --*/
 
@@ -72,10 +73,11 @@ header
   color: $white
   font-weight: bold 
 
-  h1
+  >h1
+    margin-top: 60px
     text-transform: uppercase
-    font-size: 65px
-  p
+    font-size: 55px
+  >p
     font-size: 22px
     margin-bottom: 78px
 
@@ -161,7 +163,7 @@ header
     text-transform: uppercase /*-- wielkie litery--*/
 
 .gallery 
-  margin: 10vh 0
+  margin: 0 
 
   [class^="col-"]
     position: relative
@@ -176,15 +178,14 @@ header
  
 
 .team
-  max-width: 1200px
-  margin: auto
-  margin-top: 85vh
+  margin: 0
+  margin-top: 700px
+  text-align: center
 
   img
+    text-align: center
     margin: 0
     padding: 0
-    width: 240px
-    height: auto
     display: inline-block
 
   h2
@@ -201,6 +202,7 @@ header
       margin: 4vh 0
       text-transform: none
       color: #808080
+
 
     i
       font-size: 25px
@@ -333,7 +335,7 @@ header
 
 
 .start
-  margin-top: 50px
+  margin-top: 20px
   text-align: center
 
   h1
@@ -411,5 +413,383 @@ footer div
   >.name
     display: inline-block
 /*---------------^^^^^^^^^^^----------------*/
+/*---------------na komurki----------------*/
 
-/*# sourceMappingURL=style.css.map */
+@media(max-width: 767px)
+  .col-s-1 
+    width: 8.33%
+  .col-s-2 
+    width: 16.66%
+  .col-s-3 
+    width: 25%
+  .col-s-4 
+    width: 33.33%
+  .col-s-5 
+    width: 41.66%
+  .col-s-6 
+    width: 50%
+  .col-s-7 
+    width: 58.33%
+  .col-s-8 
+    width: 66.66%
+  .col-s-9 
+    width: 75%
+  .col-s-10 
+    width: 83.33%
+  .col-s-11 
+    width: 91.66%
+  .col-s-12 
+    width: 100%
+  
+  .col-offset-s-0 
+    margin-left: 0
+
+  header 
+    background: -webkit-linear-gradient(top, rgba(2a, 2d, 48, 0.6) 100%, rgb(2a, 2d, 48) 100%), url(https://images.pexels.com/photos/207589/pexels-photo-207589.jpeg?)
+    height: 100% 
+    background-size: cover 
+    background-position: center 
+    position: relative
+    
+    > .container
+      max-width: none
+      margin: 16px
+      text-align: center
+
+      .log1
+        float: none
+        font-family: 'Raleway:900', sans-serif
+        text-transform: uppercase
+        font-size: 22px
+        position: relative
+        opacity: 0.2
+        font-weight: bold
+        display: inline-block
+
+      .log2
+        float: none
+        font-family: 'Raleway', sans-serif
+        text-transform: uppercase
+        font-size: 20px
+        position: relative
+        color: $white 
+        display: inline-block
+
+    > nav ul
+      float: none
+      margin: 0
+      padding: 0
+      list-style-type: none
+      opacity: 1
+      display: inline
+
+      
+      > li
+        margin: 1px
+        padding: 0
+        display: inline
+
+        > a
+          text-align: center 
+          margin: 0
+          display: block
+          color: $white
+          padding: 0
+          text-decoration: none
+          text-transform: uppercase /*-- wielkie litery--*/
+
+  .slogan
+    text-align: center
+    margin: 0 130px
+    color: $white
+
+
+    h1
+      text-transform: uppercase
+      font-size: 15px
+    p
+      font-size: 12px
+      margin-bottom: 10px
+
+    button
+      background-color: #f44336 /* Red */
+      border: none
+      color: white
+      padding: 5px 22px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      font-size: 12px
+      margin-bottom: 18vh
+
+  [class*="col-"]
+    float: none
+
+  .icon
+    text-align: center
+    margin: 0
+    margin-top: 15vh
+
+    i
+      font-size: 20px
+      color: $red
+      
+    h1
+      text-transform: uppercase /*-- wielkie litery--*/
+      font-size: 15px
+    p
+      font-size: 12px
+
+  .gallery 
+    margin: 10vh 0
+
+    [class^="col-"]
+      position: relative
+      margin: 0 
+      padding: 0
+
+    img
+      display: block /*------------------ brak odstępów między obrazkami ----------------*/
+      width: 100%
+      padding: 1px
+      margin: 0
+   
+  .team
+    margin: 0
+    padding: 0
+
+    img
+      margin: 0
+      padding: 0
+      width: 240px
+      height: auto
+      display: inline-block
+
+    h2
+      font-weight: normal
+      margin: 14px 0 2px 0 
+      font-size: 15px
+      padding: 0
+
+    p
+      margin: 0
+      padding: 0
+      text-transform: uppercase
+      color: #FF0000
+      font-size: 13px
+
+    .text
+      p
+        margin: 14px 0
+        padding: 0
+        text-transform: none
+        color: #808080
+        font-size: 12px
+
+      i
+        font-size: 20px
+        padding: 10px
+        width: 40px
+        height: 40px
+        border: 1px solid #C0C0C0
+        opacity: 0.3
+
+  .image
+    margin: 0
+    padding: 0
+    margin-top: 7vh
+    text-align: center
+
+    .col-6
+      margin: 0
+      padding: 0
+      
+      img
+        width: 100%
+        height: auto
+        
+  #slider
+    margin: 0
+    padding: 0
+    overflow: hidden
+    position: relative
+    width: 100%
+    height: 200px
+    background-color: #53354a
+
+    li
+      margin: 25px
+      padding: 0
+      float: left
+      position: relative
+      width: 100vh
+      height: auto
+      display: inline-block
+
+    ul
+      position: absolute
+      width: 8000px
+      transition: left .3s linear
+      -moz-transition: left .3s linear
+      -o-transition: left .3s linear
+      -webkit-transition: left .3s linear
+    
+    h1
+      font-size: 15px
+      color: white
+      margin: 0
+      padding: 0
+    
+    p
+      font-size: 12px
+      margin-top: 5px
+      padding: 0 
+
+  /*** Content ***/
+  .slider-container1
+    width: 80%
+    margin: 0
+    padding: 0
+
+  .slider-container2
+    width: 80%
+    margin: 0
+    padding: 0
+
+  .slider-container3
+    width: 80%
+    margin: 0
+    padding: 0
+
+  .slider-container4
+    width: 80%
+    margin: 0
+    padding: 0
+
+
+  @-webkit-keyframes slide-animation 
+    0% 
+      left: -10vh
+      opacity: 0
+    20% 
+      left: -10vh 
+      opacity: 1
+    22.5% 
+      opacity: 1
+    25%
+      left: -130vh 
+      opacity: 1
+    45%
+      left: -130vh  
+      opacity: 1
+    47.5% 
+      opacity: 1
+    50%
+      left: -250vh
+      opacity: 1
+    70%
+      left: -250vh
+      opacity: 1
+    72.5%
+      opacity: 1
+    75%
+      left: -370vh 
+      opacity: 1
+    95%
+      opacity: 1
+    98%
+      left: -370vh
+      opacity: 0
+    100%
+      left: 0
+      opacity: 0
+
+
+  #slider ul
+    -webkit-animation: slide-animation 10s infinite
+
+
+  /* use to paused the content on mouse over */
+
+  #slider ul:hover
+    -moz-animation-play-state: paused
+    -webkit-animation-play-state: paused
+
+
+  .start
+    margin: 0
+    text-align: center
+
+    h1
+      font-size: 15px
+      margin: 0
+    
+    h3
+      font-size: 12px
+      text-transform: uppercase
+      padding: 0
+      margin: 0
+      margin-top: 3px
+
+    button
+      background-color: #f44336 /* Red */
+      border: none
+      color: white
+      padding: 6px 8px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      font-size: 12px
+      margin-top: 5px
+
+  .contact
+    margin-top: 17vh
+    background-color: rgb(42, 45, 72)
+    height: auto
+
+    .col-4 
+      text-align: center
+      background-color: rgb(42, 45, 72)
+
+      >h1
+        margin-top: 1vh
+        text-transform: uppercase
+        color: $white
+        font-size: 15px
+        font-weight: 600
+
+      >p
+        color: $white
+        font-size: 15px
+        opacity: 0.3
+        margin: 0
+    
+      >i
+        color: $white
+        font-size: 15px
+        padding: 7px
+        width: 30px
+        height: 30px
+        border: 1px solid #C0C0C0
+
+  footer div
+    background-color: rgb(31, 34, 54)
+    text-align: center
+    color: $white
+    font-weight: 600
+
+    >p
+      opacity: 0.3
+
+    >.made
+        opacity: 0.3
+        text-align: center
+        display: inline-block
+
+    >i
+      color: red
+      margin: 0 10px
+      display: inline-block
+
+    >.name
+      display: inline-block
