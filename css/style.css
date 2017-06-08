@@ -166,7 +166,8 @@ header {
   margin-top: 15vh;
   max-width: 1200px; }
   .icon i {
-    font-size: 60px; }
+    font-size: 60px;
+    color: #ff0000; }
   .icon h1 {
     text-transform: uppercase; }
 
@@ -212,28 +213,24 @@ header {
     opacity: 0.3; }
 
 .image {
-  max-width: 1200px;
+  margin: 0;
+  padding: 0;
   margin-top: 7vh;
-  float: left; }
-  .image .col-12 {
+  text-align: center; }
+  .image .col-6 {
     margin: 0;
     padding: 0; }
-  .image .opis {
-    width: 100%;
-    height: 400px;
-    background-color: khaki;
-    position: absolute;
-    float: right;
-    text-align: center; }
-    .image .opis img {
-      height: 400px;
-      width: auto;
-      float: left; }
-    .image .opis p {
-      padding-top: 20vh; }
+    .image .col-6 img {
+      width: 100%;
+      max-height: 50vh;
+      text-align: center; }
+    .image .col-6 .slider {
+      text-align: center; }
+      .image .col-6 .slider p {
+        padding-top: 20vh; }
 
 .start {
-  margin-top: 450px;
+  margin-top: 50px;
   text-align: center; }
   .start h1 {
     font-size: 36px;
@@ -256,7 +253,7 @@ header {
     margin-top: 60px; }
 
 .contact {
-  margin-top: 110vh;
+  margin-top: 50vh;
   background-color: #2a2d48;
   height: 360px; }
   .contact .col-4 {
