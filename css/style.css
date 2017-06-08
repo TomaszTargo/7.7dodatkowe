@@ -222,12 +222,104 @@ header {
     padding: 0; }
     .image .col-6 img {
       width: 100%;
-      max-height: 50vh;
-      text-align: center; }
-    .image .col-6 .slider {
-      text-align: center; }
-      .image .col-6 .slider p {
-        padding-top: 20vh; }
+      height: 450px; }
+
+#slider {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #53354a; }
+  #slider li {
+    margin: 100px;
+    padding: 0;
+    float: left;
+    position: relative;
+    width: 100vh;
+    height: auto;
+    display: inline-block; }
+  #slider ul {
+    position: absolute;
+    width: 8000px;
+    transition: left .3s linear;
+    -moz-transition: left .3s linear;
+    -o-transition: left .3s linear;
+    -webkit-transition: left .3s linear; }
+  #slider h1 {
+    color: white;
+    margin: 0;
+    padding: 0; }
+  #slider p {
+    margin: 0;
+    padding: 0; }
+
+/*** Content ***/
+.slider-container1 {
+  width: 80%;
+  margin: 0 30px;
+  padding: 0; }
+
+.slider-container2 {
+  width: 80%;
+  margin: 0 30px;
+  padding: 0; }
+
+.slider-container3 {
+  width: 80%;
+  margin: 0 30px;
+  padding: 0; }
+
+.slider-container4 {
+  width: 80%;
+  margin: 0 30px;
+  padding: 0; }
+
+@-webkit-keyframes slide-animation {
+  0% {
+    left: -10vh;
+    opacity: 0; }
+  20% {
+    left: -10vh;
+    opacity: 1; }
+  22.5% {
+    opacity: 1; }
+  25% {
+    left: -130vh;
+    opacity: 1; }
+  45% {
+    left: -130vh;
+    opacity: 1; }
+  47.5% {
+    opacity: 1; }
+  50% {
+    left: -250vh;
+    opacity: 1; }
+  70% {
+    left: -250vh;
+    opacity: 1; }
+  72.5% {
+    opacity: 1; }
+  75% {
+    left: -370vh;
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  98% {
+    left: -370vh;
+    opacity: 0; }
+  100% {
+    left: 0;
+    opacity: 0; } }
+
+#slider ul {
+  -webkit-animation: slide-animation 10s infinite; }
+
+/* use to paused the content on mouse over */
+#slider ul:hover {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused; }
 
 .start {
   margin-top: 50px;
@@ -285,9 +377,16 @@ footer div {
   font-weight: 600; }
   footer div > p {
     opacity: 0.3; }
+  footer div > .made {
+    opacity: 0.3;
+    text-align: center;
+    display: inline-block; }
   footer div > i {
     color: red;
-    margin: 0 10px; }
+    margin: 0 10px;
+    display: inline-block; }
+  footer div > .name {
+    display: inline-block; }
 
 /*---------------^^^^^^^^^^^----------------*/
 /*# sourceMappingURL=style.css.map */
